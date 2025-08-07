@@ -29,174 +29,175 @@
         .slide-visible {
             opacity: 1;
         }
+        /* Style for the carousel when in fullscreen for a clean background */
+        #carousel:fullscreen {
+            background-color: #000;
+        }
     </style>
 </head>
 <body class="bg-stone-100 text-stone-800">
 
-    <!-- The main container no longer has padding or alignment classes -->
-    <div class="min-h-screen">
+    <!-- Carousel Container: This is now a self-contained banner at the top of the page. -->
+    <div id="carousel" class="relative w-full aspect-video bg-stone-200 shadow-lg">
+        
+        <!-- 
+          Image Slides 
+          The first slide has 'slide-visible' to prevent the initial page jump.
+        -->
+        <div class="slide slide-visible">
+            <img src="Pictures/1.jpg" alt="Carousel image 1" class="w-full h-full object-cover">
+        </div>
+        <div class="slide">
+            <img src="Pictures/2.jpg" alt="Carousel image 2" class="w-full h-full object-cover">
+        </div>
+        <div class="slide">
+            <img src="Pictures/3.jpg" alt="Carousel image 3" class="w-full h-full object-cover">
+        </div>
+        <div class="slide">
+            <img src="Pictures/4.jpg" alt="Carousel image 4" class="w-full h-full object-cover">
+        </div>
+        <div class="slide">
+            <img src="Pictures/5.jpg" alt="Carousel image 5" class="w-full h-full object-cover">
+        </div>
+        <div class="slide">
+            <img src="Pictures/6.jpg" alt="Carousel image 6" class="w-full h-full object-cover">
+        </div>
+        <div class="slide">
+            <img src="Pictures/7.jpg" alt="Carousel image 7" class="w-full h-full object-cover">
+        </div>
+        <div class="slide">
+            <img src="Pictures/8.jpg" alt="Carousel image 8" class="w-full h-full object-cover">
+        </div>
+        <div class="slide">
+            <img src="Pictures/9.jpg" alt="Carousel image 9" class="w-full h-full object-cover">
+        </div>
+        <div class="slide">
+            <img src="Pictures/10.jpg" alt="Carousel image 10" class="w-full h-full object-cover">
+        </div>
+        <div class="slide">
+            <img src="Pictures/11.jpg" alt="Carousel image 11" class="w-full h-full object-cover">
+        </div>
+        <div class="slide">
+            <img src="Pictures/12.jpg" alt="Carousel image 12" class="w-full h-full object-cover">
+        </div>
+        <div class="slide">
+            <img src="Pictures/13.jpg" alt="Carousel image 13" class="w-full h-full object-cover">
+        </div>
+        <div class="slide">
+            <img src="Pictures/14.jpg" alt="Carousel image 14" class="w-full h-full object-cover">
+        </div>
+        <div class="slide">
+            <img src="Pictures/15.jpg" alt="Carousel image 15" class="w-full h-full object-cover">
+        </div>
+        <div class="slide">
+            <img src="Pictures/16.jpg" alt="Carousel image 16" class="w-full h-full object-cover">
+        </div>
+        <div class="slide">
+            <img src="Pictures/17.jpg" alt="Carousel image 17" class="w-full h-full object-cover">
+        </div>
+        <div class="slide">
+            <img src="Pictures/18.jpg" alt="Carousel image 18" class="w-full h-full object-cover">
+        </div>
+        <div class="slide">
+            <img src="Pictures/19.jpg" alt="Carousel image 19" class="w-full h-full object-cover">
+        </div>
+        <div class="slide">
+            <img src="Pictures/20.jpg" alt="Carousel image 20" class="w-full h-full object-cover">
+        </div>
+        <div class="slide">
+            <img src="Pictures/21.jpg" alt="Carousel image 21" class="w-full h-full object-cover">
+        </div>
+        <div class="slide">
+            <img src="Pictures/22.jpg" alt="Carousel image 22" class="w-full h-full object-cover">
+        </div>
+        <div class="slide">
+            <img src="Pictures/23.jpg" alt="Carousel image 23" class="w-full h-full object-cover">
+        </div>
+        <div class="slide">
+            <img src="Pictures/24.jpg" alt="Carousel image 24" class="w-full h-full object-cover">
+        </div>
+        <div class="slide">
+            <img src="Pictures/25.jpg" alt="Carousel image 25" class="w-full h-full object-cover">
+        </div>
+        <div class="slide">
+            <img src="Pictures/26.jpg" alt="Carousel image 26" class="w-full h-full object-cover">
+        </div>
+        <div class="slide">
+            <img src="Pictures/27.jpg" alt="Carousel image 27" class="w-full h-full object-cover">
+        </div>
+        <div class="slide">
+            <img src="Pictures/28.jpg" alt="Carousel image 28" class="w-full h-full object-cover">
+        </div>
+        <div class="slide">
+            <img src="Pictures/29.jpg" alt="Carousel image 29" class="w-full h-full object-cover">
+        </div>
+        <div class="slide">
+            <img src="Pictures/30.jpg" alt="Carousel image 30" class="w-full h-full object-cover">
+        </div>
+        <div class="slide">
+            <img src="Pictures/31.jpg" alt="Carousel image 31" class="w-full h-full object-cover">
+        </div>
+        <div class="slide">
+            <img src="Pictures/32.jpg" alt="Carousel image 32" class="w-full h-full object-cover">
+        </div>
+        <div class="slide">
+            <img src="Pictures/33.jpg" alt="Carousel image 33" class="w-full h-full object-cover">
+        </div>
+        <div class="slide">
+            <img src="Pictures/34.jpg" alt="Carousel image 34" class="w-full h-full object-cover">
+        </div>
+        <div class="slide">
+            <img src="Pictures/35.jpg" alt="Carousel image 35" class="w-full h-full object-cover">
+        </div>
+        <div class="slide">
+            <img src="Pictures/36.jpg" alt="Carousel image 36" class="w-full h-full object-cover">
+        </div>
+        <div class="slide">
+            <img src="Pictures/37.jpg" alt="Carousel image 37" class="w-full h-full object-cover">
+        </div>
+        <div class="slide">
+            <img src="Pictures/38.jpg" alt="Carousel image 38" class="w-full h-full object-cover">
+        </div>
+        <div class="slide">
+            <img src="Pictures/39.jpg" alt="Carousel image 39" class="w-full h-full object-cover">
+        </div>
+        
+        <!-- Previous/Next Buttons: z-10 keeps them on top of the images -->
+        <button onclick="changeSlide(-1)" class="absolute top-1/2 left-4 transform -translate-y-1/2 bg-white/50 hover:bg-white/80 p-2 rounded-full transition-colors z-10">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-stone-800" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+            </svg>
+        </button>
+        <button onclick="changeSlide(1)" class="absolute top-1/2 right-4 transform -translate-y-1/2 bg-white/50 hover:bg-white/80 p-2 rounded-full transition-colors z-10">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-stone-800" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+        </button>
 
-        <!-- The card is now full-width and has no top/bottom margin -->
-        <div class="w-full bg-white shadow-md">
-            
-            <!-- Carousel Container: 'aspect-video' locks it to a 16:9 ratio -->
-            <div id="carousel" class="relative aspect-video bg-stone-200">
-                
-                <!-- 
-                  Image Slides 
-                  The first slide has 'slide-visible' to prevent the initial page jump.
-                -->
-                <div class="slide slide-visible">
-                    <img src="Pictures/1.jpg" alt="Carousel image 1" class="w-full h-full object-cover">
-                </div>
-                <div class="slide">
-                    <img src="Pictures/2.jpg" alt="Carousel image 2" class="w-full h-full object-cover">
-                </div>
-                <div class="slide">
-                    <img src="Pictures/3.jpg" alt="Carousel image 3" class="w-full h-full object-cover">
-                </div>
-                <div class="slide">
-                    <img src="Pictures/4.jpg" alt="Carousel image 4" class="w-full h-full object-cover">
-                </div>
-                <div class="slide">
-                    <img src="Pictures/5.jpg" alt="Carousel image 5" class="w-full h-full object-cover">
-                </div>
-                <div class="slide">
-                    <img src="Pictures/6.jpg" alt="Carousel image 6" class="w-full h-full object-cover">
-                </div>
-                <div class="slide">
-                    <img src="Pictures/7.jpg" alt="Carousel image 7" class="w-full h-full object-cover">
-                </div>
-                <div class="slide">
-                    <img src="Pictures/8.jpg" alt="Carousel image 8" class="w-full h-full object-cover">
-                </div>
-                <div class="slide">
-                    <img src="Pictures/9.jpg" alt="Carousel image 9" class="w-full h-full object-cover">
-                </div>
-                <div class="slide">
-                    <img src="Pictures/10.jpg" alt="Carousel image 10" class="w-full h-full object-cover">
-                </div>
-                <div class="slide">
-                    <img src="Pictures/11.jpg" alt="Carousel image 11" class="w-full h-full object-cover">
-                </div>
-                <div class="slide">
-                    <img src="Pictures/12.jpg" alt="Carousel image 12" class="w-full h-full object-cover">
-                </div>
-                <div class="slide">
-                    <img src="Pictures/13.jpg" alt="Carousel image 13" class="w-full h-full object-cover">
-                </div>
-                <div class="slide">
-                    <img src="Pictures/14.jpg" alt="Carousel image 14" class="w-full h-full object-cover">
-                </div>
-                <div class="slide">
-                    <img src="Pictures/15.jpg" alt="Carousel image 15" class="w-full h-full object-cover">
-                </div>
-                <div class="slide">
-                    <img src="Pictures/16.jpg" alt="Carousel image 16" class="w-full h-full object-cover">
-                </div>
-                <div class="slide">
-                    <img src="Pictures/17.jpg" alt="Carousel image 17" class="w-full h-full object-cover">
-                </div>
-                <div class="slide">
-                    <img src="Pictures/18.jpg" alt="Carousel image 18" class="w-full h-full object-cover">
-                </div>
-                <div class="slide">
-                    <img src="Pictures/19.jpg" alt="Carousel image 19" class="w-full h-full object-cover">
-                </div>
-                <div class="slide">
-                    <img src="Pictures/20.jpg" alt="Carousel image 20" class="w-full h-full object-cover">
-                </div>
-                <div class="slide">
-                    <img src="Pictures/21.jpg" alt="Carousel image 21" class="w-full h-full object-cover">
-                </div>
-                <div class="slide">
-                    <img src="Pictures/22.jpg" alt="Carousel image 22" class="w-full h-full object-cover">
-                </div>
-                <div class="slide">
-                    <img src="Pictures/23.jpg" alt="Carousel image 23" class="w-full h-full object-cover">
-                </div>
-                <div class="slide">
-                    <img src="Pictures/24.jpg" alt="Carousel image 24" class="w-full h-full object-cover">
-                </div>
-                <div class="slide">
-                    <img src="Pictures/25.jpg" alt="Carousel image 25" class="w-full h-full object-cover">
-                </div>
-                <div class="slide">
-                    <img src="Pictures/26.jpg" alt="Carousel image 26" class="w-full h-full object-cover">
-                </div>
-                <div class="slide">
-                    <img src="Pictures/27.jpg" alt="Carousel image 27" class="w-full h-full object-cover">
-                </div>
-                <div class="slide">
-                    <img src="Pictures/28.jpg" alt="Carousel image 28" class="w-full h-full object-cover">
-                </div>
-                <div class="slide">
-                    <img src="Pictures/29.jpg" alt="Carousel image 29" class="w-full h-full object-cover">
-                </div>
-                <div class="slide">
-                    <img src="Pictures/30.jpg" alt="Carousel image 30" class="w-full h-full object-cover">
-                </div>
-                <div class="slide">
-                    <img src="Pictures/31.jpg" alt="Carousel image 31" class="w-full h-full object-cover">
-                </div>
-                <div class="slide">
-                    <img src="Pictures/32.jpg" alt="Carousel image 32" class="w-full h-full object-cover">
-                </div>
-                <div class="slide">
-                    <img src="Pictures/33.jpg" alt="Carousel image 33" class="w-full h-full object-cover">
-                </div>
-                <div class="slide">
-                    <img src="Pictures/34.jpg" alt="Carousel image 34" class="w-full h-full object-cover">
-                </div>
-                <div class="slide">
-                    <img src="Pictures/35.jpg" alt="Carousel image 35" class="w-full h-full object-cover">
-                </div>
-                <div class="slide">
-                    <img src="Pictures/36.jpg" alt="Carousel image 36" class="w-full h-full object-cover">
-                </div>
-                <div class="slide">
-                    <img src="Pictures/37.jpg" alt="Carousel image 37" class="w-full h-full object-cover">
-                </div>
-                <div class="slide">
-                    <img src="Pictures/38.jpg" alt="Carousel image 38" class="w-full h-full object-cover">
-                </div>
-                <div class="slide">
-                    <img src="Pictures/39.jpg" alt="Carousel image 39" class="w-full h-full object-cover">
-                </div>
-                
-                <!-- Previous/Next Buttons -->
-                <button onclick="changeSlide(-1)" class="absolute top-1/2 left-4 transform -translate-y-1/2 bg-white/50 hover:bg-white/80 p-2 rounded-full transition-colors z-10">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-stone-800" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
-                    </svg>
-                </button>
-                <button onclick="changeSlide(1)" class="absolute top-1/2 right-4 transform -translate-y-1/2 bg-white/50 hover:bg-white/80 p-2 rounded-full transition-colors z-10">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-stone-800" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-                    </svg>
-                </button>
+        <!-- Full Screen Button -->
+        <button onclick="toggleFullScreen()" class="absolute top-4 right-4 bg-white/50 hover:bg-white/80 p-2 rounded-full transition-colors z-10">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-stone-800" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 1v4m0 0h-4m4 0l-5-5" />
+            </svg>
+        </button>
+    </div>
 
-                <!-- Full Screen Button -->
-                <button onclick="toggleFullScreen()" class="absolute top-4 right-4 bg-white/50 hover:bg-white/80 p-2 rounded-full transition-colors z-10">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-stone-800" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 1v4m0 0h-4m4 0l-5-5" />
-                    </svg>
-                </button>
-            </div>
-
-            <!-- Text Content Container: This container keeps the text centered and readable -->
-            <div class="max-w-2xl mx-auto p-8 md:p-12 text-center">
-                <!-- Profile Picture Placeholder -->
-                <div class="mb-8 -mt-24 md:-mt-32 relative z-20">
+    <!-- Main Content Area: This is a new, separate container for your text. -->
+    <div class="bg-white pb-12">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- This container creates the nice overlap effect for the profile picture -->
+            <div class="relative -mt-16 sm:-mt-24 text-center">
+                 <!-- Profile Picture sits inside the text block now -->
+                 <div class="inline-block">
                     <img 
                         src="https://placehold.co/150x150/d7ccc8/5d4037?text=Flatland+Folk" 
                         alt="A placeholder image for the Flatland Folk Photography logo" 
-                        class="w-32 h-32 rounded-full mx-auto shadow-lg border-4 border-white"
+                        class="w-32 h-32 md:w-48 md:h-48 rounded-full shadow-xl border-4 border-white"
                     >
                 </div>
 
                 <!-- Main Heading: Your Brand Name -->
-                <h1 class="text-4xl md:text-5xl font-bold text-stone-900">
+                <h1 class="mt-4 text-4xl md:text-5xl font-bold text-stone-900">
                     Flatland Folk Photography
                 </h1>
                 
@@ -206,13 +207,13 @@
                 </h2>
                 
                 <!-- A paragraph about your photography business. -->
-                <p class="mt-6 text-base md:text-lg leading-relaxed">
+                <p class="mt-6 max-w-2xl mx-auto text-base md:text-lg leading-relaxed">
                     Based near Wichita, I specialize in capturing genuine, unposed moments for families. My style is bohemian and authentic, focused on telling your story through beautiful, light-filled images. Let's create something timeless together.
                 </p>
                 
                 <!-- A simple button or call to action -->
                 <div class="mt-8">
-                    <a href="mailto:andrewmj.hogan@gmail.com" class="bg-stone-700 text-white font-bold py-3 px-6 rounded-lg hover:bg-stone-800 transition-colors duration-300 shadow">
+                    <a href="mailto:andrewmj.hogan@gmail.com" class="bg-stone-700 text-white font-bold py-3 px-6 rounded-lg hover:bg-stone-800 transition-colors duration-300 shadow-lg">
                         Book a Session
                     </a>
                 </div>
@@ -224,6 +225,7 @@
     <script>
         let slideIndex = 0;
         const slides = document.getElementsByClassName("slide");
+        const carousel = document.getElementById('carousel');
         
         function changeSlide(n) {
             slideIndex += n;
@@ -244,25 +246,31 @@
             slides[slideIndex].classList.add("slide-visible");
         }
 
-        // New function to toggle fullscreen mode for the carousel
+        // Function to toggle fullscreen mode for the carousel
         function toggleFullScreen() {
-            const carousel = document.getElementById('carousel');
             if (!document.fullscreenElement) {
-                // If not in fullscreen, request it
-                if (carousel.requestFullscreen) {
-                    carousel.requestFullscreen();
-                } else if (carousel.webkitRequestFullscreen) { /* Safari */
-                    carousel.webkitRequestFullscreen();
-                } else if (carousel.msRequestFullscreen) { /* IE11 */
-                    carousel.msRequestFullscreen();
-                }
+                carousel.requestFullscreen().catch(err => {
+                    alert(`Error attempting to enable full-screen mode: ${err.message} (${err.name})`);
+                });
             } else {
-                // If in fullscreen, exit
-                if (document.exitFullscreen) {
-                    document.exitFullscreen();
-                }
+                document.exitFullscreen();
             }
         }
+
+        // Listen for changes in fullscreen state
+        document.addEventListener('fullscreenchange', () => {
+            const isInFullscreen = document.fullscreenElement === carousel;
+            const images = carousel.getElementsByTagName('img');
+
+            // Toggle the aspect ratio on the main carousel container
+            carousel.classList.toggle('aspect-video', !isInFullscreen);
+
+            // Toggle the object-fit property on all images
+            for (const img of images) {
+                img.classList.toggle('object-cover', !isInFullscreen); // Crop when not fullscreen
+                img.classList.toggle('object-contain', isInFullscreen); // Contain when fullscreen
+            }
+        });
     </script>
 
 </body>
