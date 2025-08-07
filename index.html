@@ -143,4 +143,127 @@
                     <img src="Pictures/32.jpg" alt="Carousel image 32" class="w-full h-full object-cover">
                 </div>
                 <div class="slide">
-                    <img src="Pictures/33.jpg" alt="Carousel image 
+                    <img src="Pictures/33.jpg" alt="Carousel image 33" class="w-full h-full object-cover">
+                </div>
+                <div class="slide">
+                    <img src="Pictures/34.jpg" alt="Carousel image 34" class="w-full h-full object-cover">
+                </div>
+                <div class="slide">
+                    <img src="Pictures/35.jpg" alt="Carousel image 35" class="w-full h-full object-cover">
+                </div>
+                <div class="slide">
+                    <img src="Pictures/36.jpg" alt="Carousel image 36" class="w-full h-full object-cover">
+                </div>
+                <div class="slide">
+                    <img src="Pictures/37.jpg" alt="Carousel image 37" class="w-full h-full object-cover">
+                </div>
+                <div class="slide">
+                    <img src="Pictures/38.jpg" alt="Carousel image 38" class="w-full h-full object-cover">
+                </div>
+                <div class="slide">
+                    <img src="Pictures/39.jpg" alt="Carousel image 39" class="w-full h-full object-cover">
+                </div>
+                
+                <!-- Previous/Next Buttons -->
+                <button onclick="changeSlide(-1)" class="absolute top-1/2 left-4 transform -translate-y-1/2 bg-white/50 hover:bg-white/80 p-2 rounded-full transition-colors z-10">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-stone-800" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                    </svg>
+                </button>
+                <button onclick="changeSlide(1)" class="absolute top-1/2 right-4 transform -translate-y-1/2 bg-white/50 hover:bg-white/80 p-2 rounded-full transition-colors z-10">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-stone-800" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                    </svg>
+                </button>
+
+                <!-- Full Screen Button -->
+                <button onclick="toggleFullScreen()" class="absolute top-4 right-4 bg-white/50 hover:bg-white/80 p-2 rounded-full transition-colors z-10">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-stone-800" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 1v4m0 0h-4m4 0l-5-5" />
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Text Content Container: This container keeps the text centered and readable -->
+            <div class="max-w-2xl mx-auto p-8 md:p-12 text-center">
+                <!-- Profile Picture Placeholder -->
+                <div class="mb-8 -mt-24 md:-mt-32 relative z-20">
+                    <img 
+                        src="https://placehold.co/150x150/d7ccc8/5d4037?text=Flatland+Folk" 
+                        alt="A placeholder image for the Flatland Folk Photography logo" 
+                        class="w-32 h-32 rounded-full mx-auto shadow-lg border-4 border-white"
+                    >
+                </div>
+
+                <!-- Main Heading: Your Brand Name -->
+                <h1 class="text-4xl md:text-5xl font-bold text-stone-900">
+                    Flatland Folk Photography
+                </h1>
+                
+                <!-- Subheading: Your Services -->
+                <h2 class="mt-3 text-lg md:text-xl font-medium text-stone-700">
+                    Candid & Authentic Photography for Kansas Families
+                </h2>
+                
+                <!-- A paragraph about your photography business. -->
+                <p class="mt-6 text-base md:text-lg leading-relaxed">
+                    Based near Wichita, I specialize in capturing genuine, unposed moments for families. My style is bohemian and authentic, focused on telling your story through beautiful, light-filled images. Let's create something timeless together.
+                </p>
+                
+                <!-- A simple button or call to action -->
+                <div class="mt-8">
+                    <a href="mailto:andrewmj.hogan@gmail.com" class="bg-stone-700 text-white font-bold py-3 px-6 rounded-lg hover:bg-stone-800 transition-colors duration-300 shadow">
+                        Book a Session
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript for the Carousel -->
+    <script>
+        let slideIndex = 0;
+        const slides = document.getElementsByClassName("slide");
+        
+        function changeSlide(n) {
+            slideIndex += n;
+            showSlide(slideIndex);
+        }
+
+        function showSlide(n) {
+            // Loop around if the index goes out of bounds
+            if (n >= slides.length) { slideIndex = 0 }
+            if (n < 0) { slideIndex = slides.length - 1 }
+            
+            // Hide all slides
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].classList.remove("slide-visible");
+            }
+            
+            // Show only the current slide
+            slides[slideIndex].classList.add("slide-visible");
+        }
+
+        // New function to toggle fullscreen mode for the carousel
+        function toggleFullScreen() {
+            const carousel = document.getElementById('carousel');
+            if (!document.fullscreenElement) {
+                // If not in fullscreen, request it
+                if (carousel.requestFullscreen) {
+                    carousel.requestFullscreen();
+                } else if (carousel.webkitRequestFullscreen) { /* Safari */
+                    carousel.webkitRequestFullscreen();
+                } else if (carousel.msRequestFullscreen) { /* IE11 */
+                    carousel.msRequestFullscreen();
+                }
+            } else {
+                // If in fullscreen, exit
+                if (document.exitFullscreen) {
+                    document.exitFullscreen();
+                }
+            }
+        }
+    </script>
+
+</body>
+</html>
