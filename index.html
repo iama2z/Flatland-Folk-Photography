@@ -41,7 +41,7 @@
     <div id="carousel" class="relative w-full aspect-video bg-stone-200 shadow-lg">
         
         <!-- Image Slides -->
-        <div class="slide slide-visible">
+        <div class="slide">
             <img src="Pictures/1.jpg" alt="Carousel image 1" class="w-full h-full object-cover">
         </div>
         <div class="slide">
@@ -131,7 +131,7 @@
         <div class="slide">
             <img src="Pictures/30.jpg" alt="Carousel image 30" class="w-full h-full object-cover">
         </div>
-        <div class="slide">
+        <div class="slide slide-visible">
             <img src="Pictures/31.jpg" alt="Carousel image 31" class="w-full h-full object-cover">
         </div>
         <div class="slide">
@@ -214,10 +214,10 @@
         const slides = document.getElementsByClassName("slide");
         const carousel = document.getElementById('carousel');
         
-        // Automatically change slide every 3 seconds (3000 milliseconds)
+        // Automatically change slide every 5 seconds (5000 milliseconds)
         setInterval(() => {
             changeSlide(1);
-        }, 3000);
+        }, 5000);
 
         function changeSlide(n) {
             slideIndex += n;
