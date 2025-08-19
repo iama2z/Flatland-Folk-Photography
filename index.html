@@ -165,10 +165,19 @@
 
         
         <!-- Decorative Frame & Title Container -->
-        <div class="absolute bottom-12 left-12 right-12 p-12 bg-black bg-opacity-50 text-center text-white z-10 rounded-lg">
-            <h1 class="text-3xl md:text-4xl font-bold">
-                Flatland Folk Photography
-            </h1>
+        <div class="absolute bottom-4 left-4 right-4 p-4 bg-black bg-opacity-70 text-center text-white z-10 rounded-lg flex items-center justify-center gap-x-6">
+            <!-- Left Filigree -->
+            <svg class="h-8 w-8 hidden md:block" viewBox="0 0 100 100" fill="currentColor"><path d="M85.4,50.2c0,1-0.1,2-0.4,3c-0.6,2.4-1.9,4.6-3.7,6.3c-1.2,1.1-2.6,2-4.1,2.7c-3.2,1.5-6.9,2.1-10.4,1.8 c-4-0.3-7.8-1.6-11.2-3.6c-2.9-1.7-5.4-3.9-7.5-6.6c-2.4-3.1-4.1-6.7-5-10.6c-0.8-3.3-0.9-6.8-0.5-10.2c0.3-2.8,1.2-5.5,2.6-8 c1.7-3,4-5.6,6.8-7.6c5.9-4.2,13.2-6.2,20.6-5.4c4.6,0.5,9,2,13,4.3c3.1,1.8,5.8,4.1,8,6.9c2.5,3.2,4.3,6.8,5.2,10.8 C85.2,43.2,85.4,46.7,85.4,50.2z M50,15.9c-2.8,0-5.6,0.5-8.3,1.5c-5.1,1.9-9.4,5.2-12.4,9.6c-2.1,3-3.5,6.4-4.1,10 c-0.8,4.5-0.6,9.2,0.5,13.6c1,3.8,2.9,7.3,5.5,10.2c2.9,3.2,6.5,5.6,10.5,7.1c3.5,1.3,7.2,1.9,10.9,1.7c4.6-0.3,9-1.7,12.9-4.2 c3.9-2.5,7-6,8.9-10.2c1.7-3.6,2.5-7.6,2.4-11.6c-0.1-5.1-1.6-10-4.3-14.2c-2.6-4-6.2-7.1-10.4-9.1C58.1,16.7,54.1,15.9,50,15.9z"></path><path d="M50,25c-1,0-2,0.1-3,0.3c-4.1,0.9-7.7,3-10.4,6c-2.1,2.4-3.5,5.2-4.1,8.3c-0.6,3.1-0.5,6.3,0.3,9.4 c0.9,3.4,2.7,6.5,5.2,8.9c2.7,2.6,6.1,4.4,9.8,5.1c3.1,0.6,6.3,0.5,9.4-0.3c3.4-0.9,6.5-2.7,8.9-5.2c2.6-2.7,4.4-6.1,5.1-9.8 c0.6-3.1,0.5-6.3-0.3-9.4c-0.9-3.4-2.7-6.5-5.2-8.9C61.3,27.7,55.9,25,50,25z"></path></svg>
+            <!-- Logo and Title -->
+            <div class="flex items-center gap-x-4">
+                <!-- Placeholder Logo SVG -->
+                <svg class="h-10 w-10 text-white" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1.22 15.95l-1.13-2.05c-1.23-.22-2.35-.7-3.34-1.39l-1.98 1.14c-1.12-.99-2.01-2.1-2.68-3.32l1.14-1.98c-.69-.99-1.17-2.11-1.39-3.34L2.05 9.22c.11-1.33.5-2.61 1.08-3.78l-1.08-1.08L3.22 3.22l1.08 1.08c1.17-.58 2.45-0.97 3.78-1.08L9.22 2.05c1.22.22 2.35.7 3.34 1.39l1.98-1.14c1.12.99 2.01 2.1 2.68 3.32L15.08 7.6c.69.99 1.17 2.11 1.39 3.34l1.17 1.28c-.11 1.33-.5 2.61-1.08 3.78l1.08 1.08-1.14 1.14-1.08-1.08c-1.17.58-2.45.97-3.78 1.08zM12 8c2.21 0 4 1.79 4 4s-1.79 4-4 4-4-1.79-4-4 1.79-4 4-4z"/></svg>
+                <h1 class="text-3xl md:text-4xl font-bold">
+                    Flatland Folk Photography
+                </h1>
+            </div>
+             <!-- Right Filigree -->
+            <svg class="h-8 w-8 hidden md:block" viewBox="0 0 100 100" fill="currentColor" style="transform: scaleX(-1);"><path d="M85.4,50.2c0,1-0.1,2-0.4,3c-0.6,2.4-1.9,4.6-3.7,6.3c-1.2,1.1-2.6,2-4.1,2.7c-3.2,1.5-6.9,2.1-10.4,1.8 c-4-0.3-7.8-1.6-11.2-3.6c-2.9-1.7-5.4-3.9-7.5-6.6c-2.4-3.1-4.1-6.7-5-10.6c-0.8-3.3-0.9-6.8-0.5-10.2c0.3-2.8,1.2-5.5,2.6-8 c1.7-3,4-5.6,6.8-7.6c5.9-4.2,13.2-6.2,20.6-5.4c4.6,0.5,9,2,13,4.3c3.1,1.8,5.8,4.1,8,6.9c2.5,3.2,4.3,6.8,5.2,10.8 C85.2,43.2,85.4,46.7,85.4,50.2z M50,15.9c-2.8,0-5.6,0.5-8.3,1.5c-5.1,1.9-9.4,5.2-12.4,9.6c-2.1,3-3.5,6.4-4.1,10 c-0.8,4.5-0.6,9.2,0.5,13.6c1,3.8,2.9,7.3,5.5,10.2c2.9,3.2,6.5,5.6,10.5,7.1c3.5,1.3,7.2,1.9,10.9,1.7c4.6-0.3,9-1.7,12.9-4.2 c3.9-2.5,7-6,8.9-10.2c1.7-3.6,2.5-7.6,2.4-11.6c-0.1-5.1-1.6-10-4.3-14.2c-2.6-4-6.2-7.1-10.4-9.1C58.1,16.7,54.1,15.9,50,15.9z"></path><path d="M50,25c-1,0-2,0.1-3,0.3c-4.1,0.9-7.7,3-10.4,6c-2.1,2.4-3.5,5.2-4.1,8.3c-0.6,3.1-0.5,6.3,0.3,9.4 c0.9,3.4,2.7,6.5,5.2,8.9c2.7,2.6,6.1,4.4,9.8,5.1c3.1,0.6,6.3,0.5,9.4-0.3c3.4-0.9,6.5-2.7,8.9-5.2c2.6-2.7,4.4-6.1,5.1-9.8 c0.6-3.1,0.5-6.3-0.3-9.4c-0.9-3.4-2.7-6.5-5.2-8.9C61.3,27.7,55.9,25,50,25z"></path></svg>
         </div>
 
         <!-- Carousel Buttons -->
@@ -190,10 +199,7 @@
                 Candid & Authentic Photography for Kansas Families
             </h2>
             <p class="mt-6 max-w-2xl mx-auto text-base md:text-lg leading-relaxed">
-                Based near Wichita, I specialize in capturing genuine, unposed moments for families. My style is bohemian and authentic, focused on telling your story through beautiful, light-filled images. 
-            </p>
-            <p class="mt-6 max-w-2xl mx-auto text-base md:text-lg leading-relaxed">
-               Let's create something timeless together.
+                Based near Wichita, I specialize in capturing genuine, unposed moments for families. My style is bohemian and authentic, focused on telling your story through beautiful, light-filled images. Let's create something timeless together.
             </p>
             <div class="mt-8">
                 <!-- This button now opens the booking modal -->
@@ -210,7 +216,8 @@
             <div id="form-content">
                 <h3 class="text-2xl font-bold text-stone-900 mb-4">Request a Session</h3>
                 <p class="text-stone-600 mb-6">Fill out the form below and I'll get back to you with a quote as soon as possible!</p>
-                <form id="booking-form">
+                <!-- MODIFICATION: Added action and method attributes to the form -->
+                <form id="booking-form" action="https://formspree.io/f/xyzpqwaw" method="POST">
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <div>
                             <label for="name" class="block text-sm font-medium text-stone-700">Full Name</label>
@@ -326,10 +333,44 @@
             }, 300); // Wait for fade out
         });
 
+        // MODIFICATION: Updated form submission logic
         bookingForm.addEventListener('submit', (e) => {
-            e.preventDefault(); // Prevent actual form submission
-            formContent.classList.add('hidden');
-            thankYouMessage.classList.remove('hidden');
+            e.preventDefault(); // Prevent the default form submission
+            
+            const formData = new FormData(bookingForm);
+            const submitButton = bookingForm.querySelector('button[type="submit"]');
+            submitButton.disabled = true;
+            submitButton.textContent = 'Submitting...';
+
+            fetch(bookingForm.action, {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            }).then(response => {
+                if (response.ok) {
+                    // If submission is successful, show thank you message
+                    formContent.classList.add('hidden');
+                    thankYouMessage.classList.remove('hidden');
+                } else {
+                    // If there's an error, show an alert
+                    response.json().then(data => {
+                        if (Object.hasOwn(data, 'errors')) {
+                            alert(data["errors"].map(error => error["message"]).join(", "));
+                        } else {
+                            alert('Oops! There was a problem submitting your form.');
+                        }
+                    });
+                }
+            }).catch(error => {
+                // Handle network errors
+                alert('Oops! There was a network problem.');
+            }).finally(() => {
+                // Re-enable the button
+                submitButton.disabled = false;
+                submitButton.textContent = 'Submit Request';
+            });
         });
 
     </script>
